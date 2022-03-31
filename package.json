@@ -5,7 +5,9 @@
   "main": "server.js",
   "type": "module",
   "dependencies": {
+    "dotenv": "^16.0.0",
     "express": "^4.17.3",
+    "mongoose": "^6.2.9",
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
