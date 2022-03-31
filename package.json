@@ -1,5 +1,28 @@
 {
+  "name": "jobify",
+  "version": "1.0.0",
+  "description": "#### Track Your Job Search",
+  "main": "server.js",
+  "type": "module",
   "dependencies": {
+    "express": "^4.17.3",
     "normalize.css": "^8.0.1"
-  }
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CGrijalva90/jobify.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CGrijalva90/jobify/issues"
+  },
+  "homepage": "https://github.com/CGrijalva90/jobify#readme"
 }
