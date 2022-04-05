@@ -15,9 +15,14 @@ import jobsRouter from "./routes/jobRoutes.js";
 // middleware
 import errorHandlerMiddleware from "./middleware/error-handler.js";
 import notFoundMiddleware from "./middleware/not-found.js";
+import morgan from "morgan";
 
 app.use(cors());
 app.use(express.json());
+
+if (process.env.NODE_ENV !== "production") {
+  app.use(morgan("dev"));
+}
 
 app.get("/api/v1", (req, res) => {
   res.json({ msg: "welcome" });
